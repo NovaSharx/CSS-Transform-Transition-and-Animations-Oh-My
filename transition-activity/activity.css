@@ -7,3 +7,35 @@ button:hover {
     background-color: cornflowerblue;
     color: ghostwhite;
 }
+
+.caption {
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    transition: 1s;
+    transform: translateY(87%);
+}
+
+.caption-overlay-title {
+    text-align: left;
+}
+
+.caption-media {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.caption:hover .caption-overlay {
+    transform: translateY(0)
+}
